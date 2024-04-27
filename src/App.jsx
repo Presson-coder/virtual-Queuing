@@ -1,19 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route} from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Meals from './components/Meals';
+import SignUp from './components/SignUp';
 
-const App = () => {
+function App() {
   return (
-    <Router>
-     <div className='mb-12 p-4'>
-      <Navbar />
-     </div>
-     <div>
-       <Meals/>
-     </div>
-    </Router>
-  )
+    <div className=''>
+      <SignUp />
+    </div>
+  );
 }
 
-export default App
+export default App;
