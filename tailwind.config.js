@@ -2,7 +2,11 @@
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      scale:{
+        '200':'2',
+      }
+    },
   },
   plugins: [require("daisyui")],
 }

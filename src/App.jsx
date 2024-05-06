@@ -1,11 +1,20 @@
 import React from 'react';
-import SignUp from './components/SignUp';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home'; 
+import Login from './components/Login';
+import SignUp from './components/SignUp'; 
+import JoinQueue from './components/JoinQueue';
 
 function App() {
   return (
-    <div className=''>
-      <SignUp />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/joinqueue" element={<JoinQueue />} />
+        <Route path="/" element={<Login />} />
+      </Routes>
+    </Router>
   );
 }
 
